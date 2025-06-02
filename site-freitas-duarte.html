@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freitas & Duarte Advogados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background-color: #002244;
+      color: white;
+      padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .hero {
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      background-color: #e3e3e3;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #002244;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #003366;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 0.75rem 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: #002244;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Freitas & Duarte Advogados</h1>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Excelência em Direito com Compromisso e Ética</h2>
+    <p>Atuação estratégica e personalizada para atender as suas necessidades jurídicas.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre o Escritório</h2>
+    <p>Freitas & Duarte Advogados é um escritório especializado em Direito Civil, Trabalhista e Empresarial. Nossa missão é oferecer soluções jurídicas eficazes com ética, transparência e dedicação aos nossos clientes.</p>
+  </section>
+
+  <section id="servicos" class="services">
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li>Consultoria e Assessoria Jurídica</li>
+      <li>Direito Civil e Contratual</li>
+      <li>Direito Trabalhista</li>
+      <li>Direito Empresarial</li>
+      <li>Defesa em Processos Judiciais</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato conosco para agendar uma consulta:</p>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+    <p>Email: contato@freitaseduarte.adv.br</p>
+    <p>Telefone: (11) 1234-5678</p>
+    <p>Endereço: Av. Exemplo, 1000 - São Paulo/SP</p>
+    <iframe src="https://www.google.com/maps?q=-23.55052,-46.633308&z=15&output=embed"></iframe>
+  </section>
+
+  <a class="whatsapp" href="https://wa.me/5511999999999" target="_blank">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Freitas & Duarte Advogados. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
